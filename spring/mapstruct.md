@@ -4,9 +4,12 @@
 - 장점
     1. 컴파일 시 오류를 확인할 수 있다.
     2. 리플렉션(Reflction)을 사용하지 않기 때문에 매핑 속도가 빠르다 !!!
-        - 많이 사용하는 Model Mapper의 경우 런타임 시점에 reflection으로 모델 매핑을 하게 됨
-        - 런타임 시 reflection 자주 이루어진다면 앱 성능이 좋지 않게된다.
-        - MapStruct의 경우 컴파일 시점에 매핑 클래스를 생성하고 그 구현체를 런타임에 사용함
+        - 많이 사용하는 Model Mapper의 경우 런타임 시점에 reflection으로 모델 매핑을 하게 됨.  
+        
+        - 런타임 시 reflection 자주 이루어진다면 앱 성능이 좋지 않게된다.   
+        
+        - MapStruct의 경우 컴파일 시점에 매핑 클래스를 생성하고 그 구현체를 런타임에 사용함.  
+        
     3. 디버깅이 쉽다.
     4. 생성된 매핑 코드를 눈으로 직접 확인할 수 있다.
 
@@ -76,7 +79,6 @@ public static class FeedBackResponseDTO {
 public interface GroupStudyMapper {
     @Mapping(source = "receivedUser.id", target = "receivedUserId")
     GroupStudyDTO.FeedBackResponseDTO toFeedBackResponseDto(StudyFeedback studyFeedback);
-
 }
 ```
 
