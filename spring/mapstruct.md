@@ -135,3 +135,4 @@ public abstract class SelfHistoryMapper {
   }
 ```
 - 참고 : https://www.baeldung.com/java-mapstruct-mapping-collections
+
