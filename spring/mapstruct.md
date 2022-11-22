@@ -9,6 +9,7 @@
         - 런타임 시 reflection 자주 이루어진다면 앱 성능이 좋지 않게된다.   
         
         - MapStruct의 경우 컴파일 시점에 매핑 클래스를 생성하고 그 구현체를 런타임에 사용함.  
+        - 참고 : [리플렉션 특징](https://kdg-is.tistory.com/entry/JAVA-%EB%A6%AC%ED%94%8C%EB%A0%89%EC%85%98-Reflection%EC%9D%B4%EB%9E%80)
         
     3. 디버깅이 쉽다.
     4. 생성된 매핑 코드를 눈으로 직접 확인할 수 있다.
